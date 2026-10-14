@@ -1,6 +1,6 @@
 .form {
   max-width: 385px;
-  font-family: Inter;
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -11,7 +11,7 @@
   margin: 0;
   padding: 0;
   border: none;
-  font-family: Inter;
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -25,8 +25,12 @@
   box-sizing: border-box;
   margin: 8px 0 32px;
   border: 1px solid #838383;
-  border: radius 4px;
+  border-radius: 4px;
   color: #000;
+}
+
+.form__input::placeholder {
+  color: #838383;
 }
 
 .form__button {
@@ -35,7 +39,7 @@
   padding: 20px 0;
   border: none;
   margin-bottom: 32px;
-  font-family: Inter;
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -54,6 +58,9 @@
   border-radius: 2px;
   width: 20px;
   height: 20px;
+}
+
+.form__checkbox:checked {
   background-color: #1878dc;
   background-image: url(../images/check.svg);
 }
@@ -62,7 +69,7 @@
   display: flex;
   gap: 12px;
   justify-content: center;
-  font-family: Inter;
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
